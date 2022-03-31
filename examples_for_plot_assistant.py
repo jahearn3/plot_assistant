@@ -35,5 +35,5 @@ fig, ax2 = pa.title_and_axes(fig, ax2, '', 'x', 'y')
 ax1.xaxis.set_major_locator(ticker.NullLocator()) # removing xtick labels from the top plot because they coincide with those of the bottom plot
 ax1.plot(x, 2*y*z, 'r-')
 ax2.plot(x, y-z, 'g-')
-plt.subplots_adjust(bottom=0.15, top=0.9, hspace=0.05) # customizing the subplot positions so that axis labels are not cut off
+plt.subplots_adjust(bottom=0.15, top=0.9, hspace=0.15) # customizing the subplot positions so that axis labels are not cut off
 pa.save_and_clear_plot(fig, [ax1, ax2], 'example_3', 'png')
